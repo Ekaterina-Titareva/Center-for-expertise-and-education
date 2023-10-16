@@ -51,22 +51,22 @@
         <nav class="header-menu">
           <ul class="menu-list">
             <li class="menu-item">
+              <a href="#company-info" class="menu-link">О компании</a>
+            </li>
+            <li class="menu-item">
               <a href="#projects" class="menu-link">Проекты</a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-link menu-link-active">О компании</a>
+              <a href="#team" class="menu-link">Эксперты</a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-link">Эксперты</a>
+              <a href="#news" class="menu-link">Новости</a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-link">Новости</a>
+              <a href="#articles" class="menu-link">Статьи</a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-link">Статьи</a>
-            </li>
-            <li class="menu-item">
-              <a href="#" class="menu-link">Контакты</a>
+              <a href="#contacts" class="menu-link">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -85,22 +85,22 @@
             <div class="burger-body">
               <ul class="menu-list burger-menu">
                 <li class="menu-item">
-                  <a href="#" class="menu-link burger-menu-link">Проекты</a>
+                  <a href="#company-info" class="menu-link burger-menu-link">О компании</a>
                 </li>
                 <li class="menu-item">
-                  <a href="#" class="menu-link menu-link-active burger-menu-link-active">О компании</a>
+                  <a href="#projects" class="menu-link burger-menu-link">Проекты</a>
                 </li>
                 <li class="menu-item">
-                  <a href="#" class="menu-link burger-menu-link">Эксперты</a>
+                  <a href="#team" class="menu-link burger-menu-link">Эксперты</a>
                 </li>
                 <li class="menu-item">
-                  <a href="#" class="menu-link burger-menu-link">Новости</a>
+                  <a href="#news" class="menu-link burger-menu-link">Новости</a>
                 </li>
                 <li class="menu-item">
-                  <a href="#" class="menu-link burger-menu-link">Статьи</a>
+                  <a href="#articles" class="menu-link burger-menu-link">Статьи</a>
                 </li>
                 <li class="menu-item">
-                  <a href="#" class="menu-link burger-menu-link">Контакты</a>
+                  <a href="#contacts" class="menu-link burger-menu-link">Контакты</a>
                 </li>
               </ul>
             </div>
@@ -111,7 +111,7 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" if="main">
       <div class="container hero-container">
         <div class="hero-intro">
           <h1 class="main-title"><span class="main-title-span">Предоставление услуг в области </span>правового
@@ -120,13 +120,48 @@
           </h1>
           <p class="hero-subtitle">Работаем на благо граждан России
           </p>
-          <button class="hero-btn">Наши проекты</button>
+          <a href="#projects"><button class="hero-btn">Наши проекты</button></a>
         </div>
     </section>
-    <section class="services">
+
+    <section class="company-info" id="company-info">
+      <div class="container company-info-container">
+
+        <div class="company-info-descr">
+          <div class="section-header company-info-header">
+            <h2 class="section-header-title company-info-title">Центр экспертиз и просвещения
+              <!-- <span class="company-info-name"></span> -->
+            </h2>
+          </div>
+
+          <div class="companu-info-text">
+            <p class="companu-info-p">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
+              сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное
+              заполнение.</p>
+            <p class="companu-info-p">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые
+              модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если
+              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в
+              середине абзаца.</p>
+            <p class="companu-info-p">За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии
+              появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p>
+          </div>
+
+          <div class="company-info-btns">
+            <a href="#!" class="btn-blue">История компании</a>
+            <a href="#!" class="btn-gold">Сертификаты</a>
+          </div>
+
+        </div>
+
+        <img src="./img/info/img01.jpg" alt="Книги" class="company-info-img">
+
+      </div>
+    </section>
+
+    <section class="services" id="projects">
       <div class="container services-container">
 
-        <div lable="projects" class="section-header services-header">
+        <div class="section-header services-header">
           <h2 class="section-header-title services-title">Наши проекты</h2>
           <p class="section-header-subtitle services-subtitle">Давно выяснено, что при оценке дизайна и композиции
             читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее
@@ -491,40 +526,8 @@
 
       </div>
     </section>
-    <section class="company-info">
-      <div class="container company-info-container">
 
-        <div class="company-info-descr">
-          <div class="section-header company-info-header">
-            <h2 class="section-header-title company-info-title">Центр экспертиз и просвещения
-              <!-- <span class="company-info-name"></span> -->
-            </h2>
-          </div>
-
-          <div class="companu-info-text">
-            <p class="companu-info-p">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
-              сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное
-              заполнение.</p>
-            <p class="companu-info-p">Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые
-              модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если
-              вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в
-              середине абзаца.</p>
-            <p class="companu-info-p">За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии
-              появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p>
-          </div>
-
-          <div class="company-info-btns">
-            <a href="#!" class="btn-blue">История компании</a>
-            <a href="#!" class="btn-gold">Сертификаты</a>
-          </div>
-
-        </div>
-
-        <img src="./img/info/img01.jpg" alt="Книги" class="company-info-img">
-
-      </div>
-    </section>
-    <section class="team">
+    <section class="team" id="team">
       <div class="container team-container">
         <div class="section-header team-header">
           <h2 class="section-header-title team-title">Наши эксперты</h2>
@@ -553,7 +556,7 @@
                     государственно-правовых дисциплин ФГБОУ ВО «Приволжский филиал Российского государственного
                     университета правосудия», к.ю.н.</p>
 
-                  <h3 class="hover-effect-title hover-effect-second-title">12 лет юридической практики</h3>
+                  <h3 class="hover-effect-title hover-effect-second-title">15 лет юридической практики</h3>
 
 
                   <svg class="hover-effect-border hover-border-1" width="25" height="25" viewBox="0 0 25 25" fill="none"
@@ -609,7 +612,7 @@
                     приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не
                     напоминают латынь.</p>
 
-                  <h3 class="hover-effect-title hover-effect-second-title">8 лет юридической практики</h3>
+                  <h3 class="hover-effect-title hover-effect-second-title">10 лет юридической практики</h3>
 
                   <svg class="hover-effect-border hover-border-1" width="25" height="25" viewBox="0 0 25 25" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -664,7 +667,7 @@
                     приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не
                     напоминают латынь.</p>
 
-                  <h3 class="hover-effect-title hover-effect-second-title">5 лет юридической практики</h3>
+                  <h3 class="hover-effect-title hover-effect-second-title">7 лет юридической практики</h3>
 
 
                   <svg class="hover-effect-border hover-border-1" width="25" height="25" viewBox="0 0 25 25" fill="none"
@@ -720,7 +723,7 @@
                     приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не
                     напоминают латынь.</p>
 
-                  <h3 class="hover-effect-title hover-effect-second-title">5 лет юридической практики</h3>
+                  <h3 class="hover-effect-title hover-effect-second-title">7 лет юридической практики</h3>
 
 
                   <svg class="hover-effect-border hover-border-1" width="25" height="25" viewBox="0 0 25 25" fill="none"
@@ -763,7 +766,7 @@
         </div>
       </div>
     </section>
-    <section class="news">
+    <section class="news" id="news">
       <div class="container news-container">
 
         <div class="news-header">
@@ -801,99 +804,47 @@
 
               <div class="swiper-slide news-card">
                 <div class="news-card-header">
-                  <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_429_11031)">
-                      <path d="M3 4V18C3 19.1046 3.89543 20 5 20H17H19C20.1046 20 21 19.1046 21 18V8H17"
-                        stroke="#292929" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M3 4H17V18C17 19.1046 17.8954 20 19 20V20" stroke="#292929" stroke-width="2.5"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M13 8L7 8" stroke="#292929" stroke-width="2.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                      <path d="M13 12L9 12" stroke="#292929" stroke-width="2.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_429_11031">
-                        <rect width="24" height="24" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <!-- <img src="./img/news/img01.jpg" alt="новость" class="news-card-img"> -->
+                  <img src="./img/news/img01.jpg" alt="новость" class="news-card-img">
                   <div class="news-card-user-info">
-                    <p class="news-card-subtitle">Новость 1</p>
-                    <h3 class="news-card-title">Новость 1</h3>
+                    <p class="news-card-subtitle"></p>
+                    <h3 class="news-card-title">А Вы знаете в чем отличия прав гражданина России от свобод гражданина
+                      России?</h3>
                   </div>
                 </div>
                 <p class="news-card-text">
-                  Новость 1 Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не
-                  совсем так.
-                  Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий
-                  назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из
-                  самых странных слов ...
+                  Положения Конституции России и историю ее принятия разъяснял Руководитель Центра, к.ю.н. Александр
+                  Лаврентьев в рамках просветительского лектория "Поделись своим знанием" Российского общества "Знание".
+                  Тема лекции: "Юбилей Конституции Российской Федерации".
+
                 </p>
               </div>
 
               <div class="swiper-slide news-card">
                 <div class="news-card-header">
-                  <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_429_11031)">
-                      <path d="M3 4V18C3 19.1046 3.89543 20 5 20H17H19C20.1046 20 21 19.1046 21 18V8H17"
-                        stroke="#292929" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M3 4H17V18C17 19.1046 17.8954 20 19 20V20" stroke="#292929" stroke-width="2.5"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M13 8L7 8" stroke="#292929" stroke-width="2.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                      <path d="M13 12L9 12" stroke="#292929" stroke-width="2.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_429_11031">
-                        <rect width="24" height="24" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <!-- <img src="./img/news/img02.jpg" alt="новость" class="news-card-img"> -->
+                  <img src="./img/news/img02.jpg" alt="новость" class="news-card-img">
                   <div class="news-card-user-info">
-                    <p class="news-card-subtitle">Новость 2</p>
-                    <h3 class="news-card-title">Новость 2</h3>
+                    <p class="news-card-subtitle"></p>
+                    <h3 class="news-card-title">Отличный способ обменяться мнениями с научным сообществом и донести свою
+                      точку зрения</h3>
                   </div>
                 </div>
                 <p class="news-card-text">
-                  Новость 2 Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь
-                  шутки, скрытой
-                  в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст,
-                  который они просто повторяют, пока не достигнут нужный объём.
+                  28 сентября руководитель Центра Александр Лаврентьев принял участие во всероссийской
+                  научно-практической конференции «Актуальные
+                  проблемы медиации и судебного примирения:
+                  традиционные и альтернативные подходы в праве».
                 </p>
               </div>
 
               <div class="swiper-slide news-card">
                 <div class="news-card-header">
-                  <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_429_11031)">
-                      <path d="M3 4V18C3 19.1046 3.89543 20 5 20H17H19C20.1046 20 21 19.1046 21 18V8H17"
-                        stroke="#292929" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M3 4H17V18C17 19.1046 17.8954 20 19 20V20" stroke="#292929" stroke-width="2.5"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M13 8L7 8" stroke="#292929" stroke-width="2.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                      <path d="M13 12L9 12" stroke="#292929" stroke-width="2.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_429_11031">
-                        <rect width="24" height="24" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <!-- <img src="./img/news/img01.jpg" alt="новость" class="news-card-img"> -->
+                  <img src="./img/news/img03.jpeg" alt="новость" class="news-card-img">
                   <div class="news-card-user-info">
                     <p class="news-card-subtitle">Новость 3</p>
                     <h3 class="news-card-title">Новость 3</h3>
                   </div>
                 </div>
                 <p class="news-card-text">
-                  Новость 3 Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не
-                  совсем так.
                   Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий
                   назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из
                   самых странных слов ...
@@ -902,31 +853,14 @@
 
               <div class="swiper-slide news-card">
                 <div class="news-card-header">
-                  <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_429_11031)">
-                      <path d="M3 4V18C3 19.1046 3.89543 20 5 20H17H19C20.1046 20 21 19.1046 21 18V8H17"
-                        stroke="#292929" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M3 4H17V18C17 19.1046 17.8954 20 19 20V20" stroke="#292929" stroke-width="2.5"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                      <path d="M13 8L7 8" stroke="#292929" stroke-width="2.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                      <path d="M13 12L9 12" stroke="#292929" stroke-width="2.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_429_11031">
-                        <rect width="24" height="24" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <!-- <img src="./img/news/img02.jpg" alt="новость" class="news-card-img"> -->
+                  <img src="./img/news/img04.jpeg" alt="новость" class="news-card-img">
                   <div class="news-card-user-info">
                     <p class="news-card-subtitle">Новость 4</p>
                     <h3 class="news-card-title">Новость 4</h3>
                   </div>
                 </div>
                 <p class="news-card-text">
-                  Новость 4 Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь
+                  Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь
                   шутки, скрытой
                   в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст,
                   который они просто повторяют, пока не достигнут нужный объём.
@@ -939,13 +873,13 @@
         </div>
 
         <div class="news-btns">
-          <button>Все новости</button>
+          <a target="_blank" href="https://vk.com/center_expertise"><button>Все новости</button></a>
           <!-- <button class="btn-gold">Ссылка</button> -->
         </div>
 
       </div>
     </section>
-    <section class="materials">
+    <section class="materials" id="articles">
       <div class="container materials-container">
         <div class="section-header materials-header">
           <h2 class="section-header-title materials-title">Полезные материалы</h2>
@@ -960,7 +894,8 @@
             <div class="swiper-wrapper">
               <article class="swiper-slide materials-article">
                 <div class="materials-article-header hover-effect">
-                  <img src="./img/materials/article-img01.jpg" alt="небоскребы" class="materials-article-img">
+                  <img src="./img/materials/article-img01.webp" alt="Конституция РФ 30лет"
+                    class="materials-article-img">
 
                   <div class="hover-effect-content materials-article-hover">
 
@@ -1015,18 +950,25 @@
 
                 </div>
                 <div class="materials-article-body">
-                  <h3 class="materials-article-title">Воистину радостный звук: шёпот бессменных лидеров</h3>
+                  <a target="_blank" href="https://constitution.er.ru">
+                    <h3 class="materials-article-title">Всероссийский онлайн-конкурс
+                      «30 лет Конституции России - проверь себя!»</h3>
+                  </a>
                   <date class="materials-article-date">24 апр. 2023 г.</date>
-                  <p class="materials-article-text">Предварительные выводы неутешительны: синтетическое тестирование, а
-                    также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для экономической
-                    целесообразности принимаемых решений. </p>
+                  <a target="_blank" href="https://constitution.er.ru">
+                    <p class="materials-article-text">В 2023 году 30 лет исполняется главному документу нашей страны,
+                      правовой основе всех законопроектов – Конституции Российской Федерации. В честь этого на всей
+                      территории страны по инициативе Дмитрия Анатольевича Медведева запущен Всероссийский
+                      онлайн-конкурс «30 лет Конституции России – проверь себя!» Принять в нём участие могут все
+                      желающие старше 18 лет.</p>
+                  </a>
                 </div>
 
 
               </article>
               <article class="swiper-slide materials-article">
                 <div class="materials-article-header hover-effect">
-                  <img src="./img/materials/article-img02.jpg" alt="эйфелева башня" class="materials-article-img">
+                  <img src="./img/materials/article-img02.jpg" alt="статья" class="materials-article-img">
 
                   <div class="hover-effect-content materials-article-hover">
 
@@ -1154,7 +1096,7 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" id="contacts">
     <div class="container footer-container">
 
       <div class="padding-block">
