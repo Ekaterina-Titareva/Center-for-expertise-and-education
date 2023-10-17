@@ -1,16 +1,3 @@
-@font-face {
-  font-family: "Asket Extended";
-  src: url(../fonts/Asket\ Extended\ Light.woff2) format("woff2"),
-    url(../fonts/Asket\ Extended\ Light.woff) format("woff");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Nunito Sans";
-  src: url(../fonts/NunitoSans_Regular.woff2) format("woff2"),
-    url(../fonts/NunitoSans_Regular.woff) format("woff");
-  font-weight: 400;
-}
 
 .reset {
     margin: 0;
@@ -26,7 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    min-width: 390px;
+    min-width: 320px;
   }
     
   .logo-frame {
@@ -45,7 +32,6 @@
 
   .logo-title {
     font-family: "Asket Extended", sans-serif;
-    max-width: 400px;
     text-transform: uppercase;
     margin: 0 10px;
     font-weight: 600;
@@ -70,7 +56,6 @@
   .third-title {
     font-weight: 800;
     font-size: 20px;
-    line-height: 150%;
   }
   
   .paragraph {
@@ -116,6 +101,9 @@
   @media (max-width: 480px) {
     .padding-block {
       padding: 40px 0;
+    }
+    .logo-title {
+      font-size: 18px;
     }
   }
   
@@ -480,8 +468,6 @@
     width: 60vw;
     height: 50vh;
     border-radius: 8px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -527,15 +513,12 @@
       width: 70px;
       height: 70px;
     }
-    .logo-title {
+    .logo-title-header {
       font-size: 20px;
     }
   }
 
   @media (max-width: 1020px) {
-    .logo {
-      max-width: 217px;
-    }
     .header-menu-item {
       font-size: 14px;
     }
@@ -543,7 +526,7 @@
         width: 50px;
         height: 50px;
       }
-      .logo-title {
+      .logo-title-header {
         font-size: 16px;
       }
       .menu-list {
@@ -575,6 +558,10 @@
     }
   }
   @media (max-width: 350px) {
+  .logo-title-header {
+    display: none;
+    }
+
     .header-top-container {
       flex-direction: column;
       align-items: flex-start;
@@ -723,16 +710,14 @@
   .services-slider {
     display: none;
   }
-  
+
   .services-grid {
-    display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
     gap: 38px 24px;
     margin-bottom: 48px;
   }
-  
+    
   .services-card {
     max-width: 424px;
     display: flex;
@@ -759,6 +744,8 @@
     line-height: 150%;
     text-align: center;
     margin-bottom: 10px;
+    word-wrap: break-word;
+    
   }
   .services-card-text {
     transition: 0.3s;
@@ -796,12 +783,6 @@
     text-transform: uppercase;
   }
 
-  /* @media (max-width: 880px) {
-    .services-grid {
-      -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-    }
-  } */
   @media (max-width: 560px) {
     .services-grid {
       display: none;
@@ -812,7 +793,7 @@
     }
     .services-card {
       padding: 24px 16px 32px 16px;
-      height: 215px !important;
+      height: 215px;
       overflow: hidden;
     }
     .services-card-icon {
@@ -827,6 +808,16 @@
       font-size: 14px;
     }
   }
+
+  @media (max-width: 375px) {
+    .services-card-title {
+      font-size: 16px;
+    }
+  .services-card-text {
+    display: none;
+  }
+  }
+
   .company-info-container {
     display: flex;
     flex-direction: row;
@@ -843,10 +834,6 @@
   .company-info-title::after {
     left: 0;
     transform: translateX(0%);
-  }
-  
-  .company-info-name {
-    color: #2f3788;
   }
   
   .companu-info-text {
@@ -929,6 +916,7 @@
       max-width: 250px;
     }
   }
+
   .news {
     background-image: url(../img/news/bg.jpg);
     background-size: cover;
@@ -989,14 +977,6 @@
     flex-wrap: nowrap;
     margin-bottom: 16px;
   }
-
-  /* .news-card-header::after {
-    content: url(../img/news/news-card-img.svg);
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  } */
 
   .news-card-img {
     width: 70px;
@@ -1118,18 +1098,13 @@
   .footer-header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    gap: 60px;
     flex-wrap: nowrap;
     padding-bottom: 48px;
     border-bottom: solid 1px #8C8C8C;
   }
   
-  .footer-header-text {
-    color: #fff;
-    max-width: 600px;
-  }
   
   .footer-body {
     display: flex;
@@ -1258,6 +1233,13 @@
       display: none;
     }
   }
+
+  @media (max-width: 750px) {
+    .logo-frame-footer {
+      display: none;
+      }
+    }
+
   @media (max-width: 600px) {
     .footer-body {
       gap: 45px;
@@ -1269,4 +1251,4 @@
     .footer-bottom-container {
       justify-content: center;
     }
-  }
+    }
