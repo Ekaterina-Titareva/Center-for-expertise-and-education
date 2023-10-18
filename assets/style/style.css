@@ -1733,9 +1733,6 @@ swiper-container .swiper-notification {
   margin-bottom: 48px;
 }
 
-.hero-btn {
-  margin: 0 auto;
-}
 
 .hero-slider-btns {
   position: absolute;
@@ -1750,24 +1747,11 @@ swiper-container .swiper-notification {
   padding-right: 20px;
 }
 
-.arrow-btns-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: nowrap;
-}
 
 .slider-dots {
   cursor: pointer;
 }
 
-.arrow-btn {
-  background: transparent;
-  padding: 0;
-  cursor: pointer;
-}
 
 .hero-overlay {
   position: absolute;
@@ -2112,7 +2096,7 @@ swiper-container .swiper-notification {
   font-size: 14px;
 }
 
-.news-btns {
+.btns {
   display: flex;
   flex-direction: row;
   justify-content: center;

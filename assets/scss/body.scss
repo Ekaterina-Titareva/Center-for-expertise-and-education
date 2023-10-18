@@ -620,58 +620,16 @@
     margin-bottom: 48px;
   }
   
-  .hero-btn {
-    margin: 0 auto;
-  }
-  
-  .hero-slider-btns {
-    position: absolute;
-    width: 100%;
-    bottom: 36px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0px;
-    flex-wrap: nowrap;
-    padding-right: 20px;
-  }
-  
-  .arrow-btns-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 8px;
-    flex-wrap: nowrap;
-  }
   
   .slider-dots {
     cursor: pointer;
   }
+
   
-  .arrow-btn {
-    background: transparent;
-    padding: 0;
-    cursor: pointer;
-  }
-  
-  .hero-overlay {
-    position: absolute;
-    width: 100vw;
-    height: 100%;
-    top: 50px;
-    right: 10.1%;
-    background: rgba(34, 34, 34, 0.64);
-  }
   
   @media (max-width: 1390px) {
     .hero {
       overflow: hidden;
-    }
-    .hero-overlay {
-      top: 0;
-      left: 0;
     }
   }
   @media (max-width: 902px) {
@@ -991,7 +949,7 @@
     font-size: 14px;
   }
   
-  .news-btns {
+  .btns {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1059,9 +1017,6 @@
     fill: #fff;
   }
   
-  .materials-btn {
-    margin: 0 auto;
-  }
 
   .materials-article-img {
     max-width: 420px;
