@@ -110,7 +110,7 @@ const teamSlider = new Swiper('.team-swiper', {
     spaceBetween: 24,
     autoHeight: true,
     breakpoints: {
-        310: {
+        290: {
             slidesPerView: 1.15,
             spaceBetween: 24,
         },
