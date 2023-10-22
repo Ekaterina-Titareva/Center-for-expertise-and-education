@@ -1,39 +1,21 @@
-/**
- * Swiper 9.3.1
- * Most modern mobile touch slider and framework with hardware accelerated transitions
- * https://swiperjs.com
- *
- * Copyright 2014-2023 Vladimir Kharlampidi
- *
- * Released under the MIT License
- *
- * Released on: May 10, 2023
- */
-
-/* FONT_START */
 @font-face {
   font-family: 'swiper-icons';
-  src: url(../fonts/swiper-icons.woff);
+  src: url(../fonts/swiper-icons.woff2) format("woff2"), url(../fonts/swiper-icons.woff) format("woff");
   font-weight: 400;
   font-style: normal;
 }
-/* FONT_END */
+
 :root {
   --swiper-theme-color: #2f3788;
-  /*
-  --swiper-preloader-color: var(--swiper-theme-color);
-  --swiper-wrapper-transition-timing-function: initial;
-  */
 }
 .swiper,
-swiper-container {
+.swiper-container {
   margin-left: auto;
   margin-right: auto;
   position: relative;
   overflow: hidden;
   list-style: none;
   padding: 0;
-  /* Fix of Webkit flickering */
   z-index: 1;
   display: block;
 }
@@ -61,7 +43,7 @@ swiper-container {
   touch-action: pan-x;
 }
 .swiper-slide,
-swiper-slide {
+.swiper-slide {
   flex-shrink: 0;
   width: 100%;
   height: 100%;
@@ -233,11 +215,6 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
 }
 :root {
   --swiper-navigation-size: 44px;
-  /*
-  --swiper-navigation-top-offset: 50%;
-  --swiper-navigation-sides-offset: 10px;
-  --swiper-navigation-color: var(--swiper-theme-color);
-  */
 }
 .swiper-button-prev,
 .swiper-button-next {
@@ -529,7 +506,7 @@ button.swiper-pagination-bullet {
 }
 /* a11y */
 .swiper .swiper-notification,
-swiper-container .swiper-notification {
+.swiper-container .swiper-notification {
   position: absolute;
   left: 0;
   top: 0;
